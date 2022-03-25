@@ -2,15 +2,13 @@ import React from 'react'
 import './Herostyles.css'
 import {AiOutlineSearch} from 'react-icons/ai'
 
-import Video from '../../assets/vid/portugal-ocean.mp4'
+import header from '../../assets/img/portugal-header.jpg'
 
 function Hero() {
     return (
     <div>
         <div className='hero'>
-            <video autoPlay loop muted id='video'>
-                <source src={Video} type='video/mp4' />
-            </video>
+                <img src={header} alt="Portugal beaches" />
             <div className="overlay"></div>
             <div className="content">
                 <h1>'DESTINATE'</h1>
