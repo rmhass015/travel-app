@@ -1,0 +1,129 @@
+.destinations {
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.destinations h1, .destinations h2, .destinations h3 {
+    padding: 1rem;
+}
+
+.img-container {
+    --gap:1rem;
+    --num-cols:1;
+    --row-height: 300px;
+
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    margin: auto;
+    padding: 1rem 0;
+    gap: var(--gap)
+}
+
+.destinations img {
+    /* width: 70%; */
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-deck {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-deck > .card {
+    margin: 30px 15px;
+    margin-bottom: 0px;
+    -webkit-box-flex: 0 !important;
+    flex: 0 0 355px !important;
+    max-width: 355px;
+    min-height: 400px;
+}
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, 0.125);
+    border-radius: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #000;
+    margin: 10px 0;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+  }
+
+.card-text {
+    text-align: left;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+  }
+
+.card-btn {
+    margin: 15px 0;
+    padding: 12px;
+    background-color: #dc143c;
+    border: 1px solid #ca1036;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card-btn:hover {
+    background-color: rgb(219, 44, 79);
+    animation: linear 5s;
+}
+
+.card-footer {
+    padding: 1.5rem 1.25rem;
+    background-color: transparent;
+    border-top: 0 solid rgba(0, 0, 0, 0.125);
+  }
+
+.card .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+.mb-md-gutter {
+    margin-bottom: 30px !important;
+  }
+
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+
+.card-img, .card-img-top, .card-img-bottom {
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+@media screen and (max-width: 940px) {
+    .destinations img {
+        width: 100%;
+        height: 250px;
+    }
+}
